@@ -19,31 +19,31 @@ import java.util.concurrent.Callable;
         sortOptions = false)
 public class JiraReportCommand implements Callable<Integer> {
 
-    @Parameters(index = "0"/*, defaultValue = "generate"*/, arity = "0")
+    @Parameters(index = "0", arity = "0")
     private String command;
 
-    @Option(names = {"-u", "--user"}, required = true, description = "User email used to login into Jira"/*, defaultValue = "athus.vieira@wexinc.com"*/)
+    @Option(names = {"-u", "--user"}, required = true, description = "User email used to login into Jira")
     private String user;
 
-    @Option(names = {"-t", "--token"}, required = true, description = "Token to access Jira API"/*, defaultValue = "UeUH5BsiB9HYkKXa2xV75AD8"*/)
+    @Option(names = {"-t", "--token"}, required = true, description = "Token to access Jira API")
     private String token;
 
-    @Option(names = {"-p", "--project"}, description = "Project name in Jira"/*, defaultValue = "EDGE"*/)
+    @Option(names = {"-p", "--project"}, description = "Project name in Jira")
     private String project;
 
     @Option(names = {"-a", "--assignees"}, description = "Users to look up")
     String[] assignees;
 
-    @Option(names = {"--from"}, description = "Start date (YYYY-MM-DD)", converter = String2DateConverter.class/*, defaultValue = "2020-01-01"*/)
+    @Option(names = {"--from"}, description = "Start date (YYYY-MM-DD)", converter = String2DateConverter.class)
     private Date startDate;
 
-    @Option(names = {"--to"}, description = "End date (YYYY-MM-DD)", converter = String2DateConverter.class/*, defaultValue = "2020-01-31"*/)
+    @Option(names = {"--to"}, description = "End date (YYYY-MM-DD)", converter = String2DateConverter.class)
     private Date endDate;
 
     @Option(names = {"-l", "--max"}, description = "Max results to fetch from the Jira Api", defaultValue = "1000")
     private Integer maxResults;
 
-    @Option(names = {"-o", "--out"}, description = "Where to save the generated report"/*, defaultValue = "C:\\Users\\avieira\\Documents"*/)
+    @Option(names = {"-o", "--out"}, description = "Where to save the generated report")
     private String outputPath;
 
     @Option(names = {"-h", "--help"}, usageHelp = true, description = "Display a help message")
