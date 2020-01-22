@@ -17,6 +17,10 @@ Other options are available:
 -o or --out : The absolute path you want to save your generated report     
 ```
 
+#### Important Note:
+
+I assume that the resolved issues are the issues whose status is one of these: DONE, CLOSED, DEPENDENT, READY FOR MIGRATION, READY FOR QA or MIGRATED 
+
 Bugs or other suggestion, please send me an email at athus.vieira@wexinc.com
 
 Thanks!
