@@ -1,4 +1,4 @@
-###Usage
+### Usage
 
 User email and access token are the only required option:
 You may need to add this on your Path env variable (Windows users)
