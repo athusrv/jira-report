@@ -12,7 +12,7 @@ Other options are available:
 -a or --assignees : Set the assignee you are searching for.
                     You can specify many option to search for many assignees
 --from : Start searching resolved issues from this date
---end : Stop searching resolved issues on this date.
+--to : Stop searching resolved issues on this date.
 -l or --max : The amount of data to fetch from Jira API since they use it to improve performance
 -o or --out : The absolute path you want to save your generated report     
 ```
