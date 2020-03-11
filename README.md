@@ -21,6 +21,6 @@ Other options are available:
 
 I assume that the resolved issues are the issues whose status is one of these: DONE, CLOSED, DEPENDENT, READY FOR MIGRATION, READY FOR QA or MIGRATED 
 
-Bugs or other suggestion, please send me an email at athus.vieira@wexinc.com
+Bugs or other suggestion, please send me an email at athusvieira@gmail.com
 
 Thanks!
